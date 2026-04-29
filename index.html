@@ -46,7 +46,6 @@
       min-height: 100vh;
     }
 
-    
     .site-header {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
@@ -64,7 +63,6 @@
 
     .container { max-width: 780px; margin: 0 auto; padding: 28px 20px 60px; }
 
-    
     .tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
     .tab { padding: 9px 18px; font-size: 13px; font-family: inherit; border: none; background: transparent; color: var(--text-muted); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color 0.15s; }
     .tab:hover { color: var(--text); }
@@ -72,11 +70,9 @@
     .tab-content { display: none; }
     .tab-content.active { display: block; }
 
-    
     .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; margin-bottom: 16px; }
     .card-title { font-size: 11px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 14px; }
 
-    
     .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
     .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 12px; }
     label { display: block; font-size: 12px; color: var(--text-muted); margin-bottom: 5px; font-weight: 500; }
@@ -88,7 +84,6 @@
     }
     input:focus, select:focus { outline: none; border-color: var(--teal-mid); box-shadow: 0 0 0 3px rgba(29,158,117,0.12); }
 
-    
     .metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; }
     .metric { background: var(--surface2); border-radius: var(--radius-sm); padding: 14px; }
     .metric-label { font-size: 11px; color: var(--text-muted); margin-bottom: 4px; font-weight: 500; }
@@ -100,7 +95,6 @@
     .metric.green .metric-value { color: var(--green); }
     .metric.red .metric-value { color: var(--red); }
 
-    
     .phase-bar { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3px; border-radius: 99px; overflow: hidden; margin-bottom: 10px; height: 7px; }
     .phase-seg.ini { background: var(--teal-light); }
     .phase-seg.mid { background: var(--teal-mid); }
@@ -109,17 +103,15 @@
     .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
     .legend-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
 
-    
     .formula-box {
       background: var(--surface2); border-radius: var(--radius-sm);
       padding: 12px 15px; font-size: 12.5px; font-family: 'DM Mono', monospace;
       color: var(--text-muted); line-height: 1.9; word-break: break-all;
+      white-space: pre-line;
     }
 
-    
     hr { border: none; border-top: 1px solid var(--border); margin: 14px 0; }
 
-    
     .btn {
       display: inline-flex; align-items: center; gap: 6px;
       padding: 8px 18px; font-size: 13px; font-family: inherit;
@@ -131,7 +123,6 @@
     .btn-primary { background: var(--teal-dark); color: #fff; border-color: var(--teal-dark); }
     .btn-primary:hover { background: var(--teal-mid); border-color: var(--teal-mid); }
 
-    
     .scenario-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
     .scenario-name { font-size: 13px; font-weight: 500; min-width: 80px; }
     .scenario-bar-wrap { flex: 1; background: var(--surface2); border-radius: 99px; height: 8px; overflow: hidden; }
@@ -143,31 +134,18 @@
     .change-down { background: var(--green-faint); color: var(--green); }
     .change-neutral { background: var(--surface2); color: var(--text-muted); }
 
-    
     .kc-table { width: 100%; border-collapse: collapse; font-size: 13px; }
     .kc-table th { text-align: left; font-size: 11px; font-weight: 500; color: var(--text-muted); padding: 6px 8px; border-bottom: 1px solid var(--border); text-transform: uppercase; letter-spacing: 0.05em; }
     .kc-table td { padding: 9px 8px; border-bottom: 1px solid var(--border); }
     .kc-table tr:last-child td { border-bottom: none; }
     .kc-table tr:hover td { background: var(--surface2); }
 
-    
     .kc-chart { display: flex; flex-direction: column; gap: 8px; }
-    .kc-row { display: flex; align-items: center; gap: 10px; }
-    .kc-crop-name { font-size: 12px; min-width: 130px; color: var(--text-muted); }
-    .kc-bars { display: flex; gap: 3px; flex: 1; }
-    .kc-bar-wrap { flex: 1; display: flex; flex-direction: column; gap: 2px; }
-    .kc-bar { height: 12px; border-radius: 3px; transition: width 0.3s; }
 
-    
     .alert { padding: 11px 14px; border-radius: var(--radius-sm); font-size: 13px; margin-bottom: 14px; line-height: 1.5; }
     .alert-info { background: var(--blue-faint); color: var(--blue); border: 1px solid var(--blue-light); }
     .alert-teal { background: var(--teal-faint); color: var(--teal-dark); border: 1px solid var(--teal-light); }
 
-    
-    .input-row { display: flex; gap: 10px; align-items: flex-end; }
-    .input-row > div { flex: 1; }
-
-    
     .site-footer { text-align: center; font-size: 12px; color: var(--text-faint); padding: 20px; border-top: 1px solid var(--border); margin-top: 20px; }
     .site-footer a { color: var(--text-muted); }
 
@@ -190,22 +168,19 @@
 </header>
 
 <div class="container">
-
   <div class="tabs">
-    <button class="tab active" onclick="switchTab('calc')">Calculate</button>
-    <button class="tab" onclick="switchTab('scenario')">Scenarios</button>
-    <button class="tab" onclick="switchTab('compare')">Crop compare</button>
-    <button class="tab" onclick="switchTab('reference')">Reference</button>
+    <button class="tab active" type="button" onclick="switchTab(event, 'calc')">Calculate</button>
+    <button class="tab" type="button" onclick="switchTab(event, 'scenario')">Scenarios</button>
+    <button class="tab" type="button" onclick="switchTab(event, 'compare')">Crop compare</button>
+    <button class="tab" type="button" onclick="switchTab(event, 'reference')">Reference</button>
   </div>
 
-  
   <div id="tab-calc" class="tab-content active">
-
     <div class="card">
       <div class="card-title">Crop &amp; location</div>
       <div class="grid2">
         <div>
-          <label>Crop type</label>
+          <label for="crop">Crop type</label>
           <select id="crop" onchange="recalc()">
             <option value="grapes">Wine grapes</option>
             <option value="strawberries">Strawberries</option>
@@ -218,7 +193,7 @@
           </select>
         </div>
         <div>
-          <label>Month</label>
+          <label for="month">Month</label>
           <select id="month" onchange="autoETo(); recalc()">
             <option value="1">January</option>
             <option value="2">February</option>
@@ -237,11 +212,11 @@
       </div>
       <div class="grid2">
         <div>
-          <label>Acreage (acres)</label>
+          <label for="acreage">Acreage (acres)</label>
           <input type="number" id="acreage" value="100" min="1" onchange="recalc()" />
         </div>
         <div>
-          <label>CIMIS ETo zone</label>
+          <label for="zone">CIMIS ETo zone</label>
           <select id="zone" onchange="autoETo(); recalc()">
             <option value="14">Zone 14 – Salinas coast</option>
             <option value="15" selected>Zone 15 – Salinas Valley</option>
@@ -256,15 +231,15 @@
       <div class="alert alert-teal" style="font-size:12px;padding:9px 13px;">Values auto-filled from CIMIS historical averages for selected zone &amp; month. Override as needed.</div>
       <div class="grid3">
         <div>
-          <label>ETo (in/month)</label>
+          <label for="eto">ETo (in/month)</label>
           <input type="number" id="eto" step="0.1" value="4.8" onchange="recalc()" />
         </div>
         <div>
-          <label>Precipitation (in)</label>
+          <label for="precip">Precipitation (in)</label>
           <input type="number" id="precip" step="0.1" value="0.3" onchange="recalc()" />
         </div>
         <div>
-          <label>Days in month</label>
+          <label for="days">Days in month</label>
           <input type="number" id="days" value="31" min="1" max="31" onchange="recalc()" />
         </div>
       </div>
@@ -323,14 +298,11 @@
       </div>
 
       <hr />
-      <div class="formula-box" id="formula-display">ETa = ETo × Kc &nbsp;·&nbsp; Irrigation = ETa − Precipitation</div>
+      <div class="formula-box" id="formula-display">ETa = ETo × Kc · Irrigation = ETa − Precipitation</div>
     </div>
-
   </div>
 
-  
   <div id="tab-scenario" class="tab-content">
-
     <div class="alert alert-info">
       Projected irrigation demand change relative to the BAU baseline, using mid-century IPCC AR6 temperature and precipitation delta estimates for coastal California. ETo is approximated to scale linearly with temperature (+2% per °C, based on Penman-Monteith sensitivity analysis).
     </div>
@@ -339,7 +311,7 @@
       <div class="card-title">Crop &amp; scale for scenario</div>
       <div class="grid2">
         <div>
-          <label>Crop</label>
+          <label for="s-crop">Crop</label>
           <select id="s-crop" onchange="recalcScenario()">
             <option value="grapes">Wine grapes</option>
             <option value="strawberries">Strawberries</option>
@@ -349,7 +321,7 @@
           </select>
         </div>
         <div>
-          <label>Acreage</label>
+          <label for="s-acreage">Acreage</label>
           <input type="number" id="s-acreage" value="200" min="1" onchange="recalcScenario()" />
         </div>
       </div>
@@ -365,7 +337,7 @@
       <p style="font-size:13px;color:var(--text-muted);margin-bottom:14px;">Model the impact of converting acreage from one crop to another on total irrigation demand. Uses BAU baseline.</p>
       <div class="grid2">
         <div>
-          <label>Current crop</label>
+          <label for="from-crop">Current crop</label>
           <select id="from-crop" onchange="recalcChange()">
             <option value="grapes">Wine grapes</option>
             <option value="strawberries">Strawberries</option>
@@ -375,7 +347,7 @@
           </select>
         </div>
         <div>
-          <label>New crop</label>
+          <label for="to-crop">New crop</label>
           <select id="to-crop" onchange="recalcChange()">
             <option value="strawberries">Strawberries</option>
             <option value="grapes">Wine grapes</option>
@@ -386,17 +358,14 @@
         </div>
       </div>
       <div style="margin-bottom:14px;">
-        <label>Acres to convert</label>
+        <label for="convert-acres">Acres to convert</label>
         <input type="number" id="convert-acres" value="50" min="1" onchange="recalcChange()" style="max-width:200px;" />
       </div>
       <div id="change-result"></div>
     </div>
-
   </div>
 
-  
   <div id="tab-compare" class="tab-content">
-
     <div class="card">
       <div class="card-title">FAO-56 crop coefficients — all phases</div>
       <table class="kc-table">
@@ -423,20 +392,19 @@
       </div>
       <div class="kc-chart" id="kc-chart"></div>
     </div>
-
   </div>
 
-  
   <div id="tab-reference" class="tab-content">
-
     <div class="card">
       <div class="card-title">FAO-56 formula reference</div>
       <div class="formula-box" style="margin-bottom:14px;">
-        ETo &nbsp;= Reference evapotranspiration (Penman-Monteith, in/month)<br>
-        Kc &nbsp;&nbsp;= Crop coefficient — dimensionless (FAO-56, Table 12)<br>
-        ETa &nbsp;= ETo × Kc &nbsp;&nbsp;(actual crop evapotranspiration)<br><br>
-        Blue water &nbsp;&nbsp;= max(0, ETa − Effective Precipitation) &nbsp;[irrigation demand]<br>
-        Green water = min(ETa, Effective Precipitation) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[precip contribution]<br><br>
+        ETo = Reference evapotranspiration (Penman-Monteith, in/month)
+        Kc  = Crop coefficient — dimensionless (FAO-56, Table 12)
+        ETa = ETo × Kc (actual crop evapotranspiration)
+
+        Blue water = max(0, ETa − Effective Precipitation) [irrigation demand]
+        Green water = min(ETa, Effective Precipitation) [precip contribution]
+
         Acre-feet = Irrigation (in) × Acreage (acres) ÷ 12
       </div>
       <div class="alert alert-info">
@@ -477,7 +445,6 @@
       <p style="font-size:13px;color:var(--text-muted);margin-bottom:4px;">Brooke Murphy · <a href="mailto:bmurph32@calpoly.edu" style="color:var(--teal-dark);">bmurph32@calpoly.edu</a> · (408) 500-5300</p>
       <p style="font-size:13px;color:var(--text-muted);">Advisor: Dr. Yiwen Chiu</p>
     </div>
-
   </div>
 </div>
 
@@ -487,16 +454,15 @@
 </footer>
 
 <script>
-
 const CROPS = {
   grapes:       { name: 'Wine grapes',         kc: [0.30, 0.85, 0.45], season: 'Apr – Oct' },
-  strawberries: { name: 'Strawberries',         kc: [0.40, 0.85, 0.75], season: 'Mar – Nov' },
-  lettuce:      { name: 'Lettuce',              kc: [0.70, 1.00, 0.95], season: 'Feb – Nov' },
-  broccoli:     { name: 'Broccoli',             kc: [0.70, 1.05, 0.95], season: 'Aug – Dec' },
-  artichokes:   { name: 'Artichokes',           kc: [0.50, 1.00, 0.95], season: 'Mar – Oct' },
-  spinach:      { name: 'Spinach',              kc: [0.70, 1.00, 0.95], season: 'Feb – Oct' },
-  almonds:      { name: 'Almonds',              kc: [0.40, 1.05, 0.65], season: 'Mar – Oct' },
-  tomatoes:     { name: 'Processing tomatoes',  kc: [0.60, 1.15, 0.70], season: 'Apr – Sep' },
+  strawberries: { name: 'Strawberries',        kc: [0.40, 0.85, 0.75], season: 'Mar – Nov' },
+  lettuce:      { name: 'Lettuce',             kc: [0.70, 1.00, 0.95], season: 'Feb – Nov' },
+  broccoli:     { name: 'Broccoli',            kc: [0.70, 1.05, 0.95], season: 'Aug – Dec' },
+  artichokes:   { name: 'Artichokes',          kc: [0.50, 1.00, 0.95], season: 'Mar – Oct' },
+  spinach:      { name: 'Spinach',             kc: [0.70, 1.00, 0.95], season: 'Feb – Oct' },
+  almonds:      { name: 'Almonds',             kc: [0.40, 1.05, 0.65], season: 'Mar – Oct' },
+  tomatoes:     { name: 'Processing tomatoes', kc: [0.60, 1.15, 0.70], season: 'Apr – Sep' },
 };
 
 const CIMIS_ETO = [
@@ -540,10 +506,12 @@ const SCENARIOS = [
   { name: 'SSP5-8.5',  dTemp: 4.5, dPrecip:-0.15, color: '#E24B4A' },
 ];
 
-function zoneIdx(zone) { return parseInt(zone) - 14; }
+function zoneIdx(zone) {
+  return parseInt(zone, 10) - 14;
+}
 
 function autoETo() {
-  const m = parseInt(document.getElementById('month').value) - 1;
+  const m = parseInt(document.getElementById('month').value, 10) - 1;
   const z = zoneIdx(document.getElementById('zone').value);
   document.getElementById('eto').value = CIMIS_ETO[m][z].toFixed(1);
   document.getElementById('precip').value = CIMIS_PRECIP[m][z].toFixed(1);
@@ -560,13 +528,18 @@ function annualIrrigation(cropKey, baseETo, basePrecip, dTemp, dPrecip) {
   return irr;
 }
 
-function switchTab(name) {
+function switchTab(evt, name) {
   document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
   document.getElementById('tab-' + name).classList.add('active');
-  event.currentTarget.classList.add('active');
-  if (name === 'scenario') { recalcScenario(); recalcChange(); }
-  if (name === 'compare') buildCompare();
+  evt.currentTarget.classList.add('active');
+  if (name === 'scenario') {
+    recalcScenario();
+    recalcChange();
+  }
+  if (name === 'compare') {
+    buildCompare();
+  }
 }
 
 function recalc() {
@@ -594,9 +567,9 @@ function recalc() {
   document.getElementById('total-demand').textContent = seasonDemand.toFixed(1);
 
   document.getElementById('formula-display').textContent =
-    `ETa(mid) = ${eto.toFixed(2)} in × Kc ${kMid.toFixed(2)} = ${etaMid.toFixed(2)} in/month` +
-    `\nIrrigation = ${etaMid.toFixed(2)} − ${precip.toFixed(2)} = ${Math.max(0, etaMid - precip).toFixed(2)} in/month` +
-    `\nBlue water demand = ${Math.max(0, etaMid - precip).toFixed(2)} in × ${acreage} acres = ${blueMid.toFixed(1)} acre-inches`;
+    `ETa(mid) = ${eto.toFixed(2)} in × Kc ${kMid.toFixed(2)} = ${etaMid.toFixed(2)} in/month\n` +
+    `Irrigation = ${etaMid.toFixed(2)} − ${precip.toFixed(2)} = ${Math.max(0, etaMid - precip).toFixed(2)} in/month\n` +
+    `Blue water demand = ${Math.max(0, etaMid - precip).toFixed(2)} in × ${acreage} acres = ${blueMid.toFixed(1)} acre-inches`;
 }
 
 function recalcScenario() {
@@ -661,7 +634,7 @@ function recalcChange() {
       <div class="metric ${delta > 0 ? 'red' : 'green'}">
         <div class="metric-label">Change in demand</div>
         <div class="metric-value">${sign}${delta.toFixed(0)}</div>
-        <div class="metric-unit">acre-in/yr &nbsp;<span class="change-badge ${badgeClass}">${sign}${fromTotal > 0 ? ((delta/fromTotal)*100).toFixed(1) : 0}%</span></div>
+        <div class="metric-unit">acre-in/yr <span class="change-badge ${badgeClass}">${sign}${fromTotal > 0 ? ((delta / fromTotal) * 100).toFixed(1) : 0}%</span></div>
       </div>
     </div>`;
 }
@@ -706,7 +679,6 @@ function buildCompare() {
 }
 
 function buildEToTable() {
-  const zoneNames = ['Zone 14 – Coast', 'Zone 15 – Valley', 'Zone 16 – South'];
   let html = '';
   MONTH_NAMES.forEach((m, i) => {
     html += `<tr><td>${m}</td><td>${CIMIS_ETO[i][0].toFixed(1)}</td><td>${CIMIS_ETO[i][1].toFixed(1)}</td><td>${CIMIS_ETO[i][2].toFixed(1)}</td></tr>`;
